@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7ofra Role Play - عالم المغامرات</title>
+    <link rel="stylesheet" href="test.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- الموسيقى الخلفية -->
+    <audio id="bgMusic" loop>
+      <source
+        src="GTA San Andreas Theme Song Full ! !-Buttonik-1762200662329.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <!-- مشغل الموسيقى -->
+    <div class="music-player">
+      <div class="music-controls">
+        <button class="play-btn">
+          <i class="fas fa-play"></i>
+        </button>
+        <div class="music-info">
+          <div class="track-name">7ofra Theme</div>
+          <div class="progress-container">
+            <div class="progress-bar"></div>
+          </div>
+        </div>
+        <div class="volume-control">
+          <i class="fas fa-volume-up"></i>
+          <input
+            type="range"
+            class="volume-slider"
+            min="0"
+            max="100"
+            value="50"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- شاشة التحميل -->
+    <div class="preloader">
+      <div class="preloader-content">
+        <div class="logo-animation">
+          <div class="logo-7"></div>
+          <div class="logo-text">
+            <span class="logo-ofra">7ofra</span>
+            <span class="logo-rp">Role Play</span>
+          </div>
+        </div>
+        <div class="loading-bar">
+          <div class="loading-progress"></div>
+        </div>
+        <div class="loading-text">جاري تحميل عالم 7ofra...</div>
+      </div>
+    </div>
+
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <div class="brand-logo">
+            <div class="logo-7"></div>
+            <div class="logo-text">
+              <span class="main-text">7ofra</span>
+              <span class="sub-text">Role Play</span>
+            </div>
+          </div>
+          <div class="server-status">
+            <div class="status-dot online"></div>
+            <span>40 لاعب متصل</span>
+          </div>
+        </div>
+
+        <div class="nav-menu">
+          <a href="#home" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>الرئيسية</span>
+          </a>
+          <a href="#about" class="nav-item">
+            <i class="fas fa-info"></i>
+            <span>عن السرفر</span>
+          </a>
+          <a href="#features" class="nav-item">
+            <i class="fas fa-star"></i>
+            <span>المميزات</span>
+          </a>
+          <a href="#gallery" class="nav-item">
+            <i class="fas fa-images"></i>
+            <span>المعرض</span>
+          </a>
+          <a href="#discord" class="nav-item">
+            <i class="fab fa-discord"></i>
+            <span>ديسكورد</span>
+          </a>
+          <a href="#join" class="nav-item cta">
+            <i class="fas fa-gamepad"></i>
+            <span>انضم الآن</span>
+          </a>
+        </div>
+
+        <div class="nav-actions">
+          <div class="player-count">
+            <i class="fas fa-users"></i>
+            <span>40/100</span>
+          </div>
+          <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span>سرفر #1 للعبة الأدوار</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-7">7</span>
+            <span class="title-ofra">ofra</span>
+            <span class="title-rp">Role Play</span>
+          </h1>
+
+          <p class="hero-desc">
+            انطلق في رحلة <span class="highlight">غير عادية</span> في عالم
+            <strong>7ofra</strong> حيث المغامرة لا تنتهي. انضم إلى
+            <strong>260+ عضو</strong> في مجتمعنا وابدأ قصتك الخاصة.
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-icon">
+                <i class="fab fa-discord"></i>
+              </div>
+              <div class="stat-info">
+                <h3>260+</h3>
+                <p>عضو في الديسكورد</p>
+              </div>
+            </div>
+            <div class="stat">
+              <div class="stat-icon">
+                <i class="fas fa-gamepad"></i>
+              </div>
+              <div class="stat-info">
+                <h3>40</h3>
+                <p>لاعب نشط</p>
+              </div>
+            </div>
+            <div class="stat">
+              <div class="stat-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="stat-info">
+                <h3>24/7</h3>
+                <p>متاح دائماً</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#join" class="btn btn-primary">
+              <i class="fas fa-play"></i>
+              ابدأ اللعب الآن
+            </a>
+            <a href="https://discord.gg/uJBpQEwPZ" class="btn btn-secondary">
+              <i class="fab fa-discord"></i>
+              انضم للديسكورد
+            </a>
+          </div>
+
+          <div class="server-ip">
+            <div class="ip-label">IP السرفر:</div>
+            <div class="ip-address">
+              <code>51.75.79.54:7005</code>
+              <button class="copy-btn" data-ip="51.75.79.54:7005">
+                <i class="fas fa-copy"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="character-showcase">
+            <div class="character-model">
+              <div class="model-placeholder">
+                <i class="fas fa-user"></i>
+              </div>
+            </div>
+            <div class="character-stats">
+              <div class="stat-bar">
+                <label>المستوى: 75</label>
+                <div class="bar">
+                  <div class="fill" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="stat-bar">
+                <label>المال: $1,250,000</label>
+                <div class="bar">
+                  <div class="fill" style="width: 60%"></div>
+                </div>
+              </div>
+              <div class="stat-bar">
+                <label>السمعة: 850</label>
+                <div class="bar">
+                  <div class="fill" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم عن السرفر -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">اكتشف عالم <span>7ofra</span></h2>
+          <p class="section-subtitle">حيث تبدأ القصص وتنتهي الحدود</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-content">
+            <div class="about-text">
+              <h3>لماذا <span class="accent">7ofra</span>؟</h3>
+              <p>
+                <strong>7ofra Role Play</strong> ليس مجرد سرفر عادي - إنه عالم
+                كامل من المغامرات والقصص المثيرة. مع
+                <strong>260+ عضو</strong> في مجتمعنا و<strong
+                  >40 لاعب نشط</strong
+                >، نحن نقدم تجربة لعب أدوار فريدة من نوعها.
+              </p>
+
+              <div class="features-highlights">
+                <div class="highlight-item">
+                  <div class="icon">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <div class="text">
+                    <h4>بيئة آمنة</h4>
+                    <p>إدارة نشطة ومراقبة مستمرة</p>
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <div class="icon">
+                    <i class="fas fa-sync-alt"></i>
+                  </div>
+                  <div class="text">
+                    <h4>تحديثات مستمرة</h4>
+                    <p>محتوى جديد أسبوعياً</p>
+                  </div>
+                </div>
+                <div class="highlight-item">
+                  <div class="icon">
+                    <i class="fas fa-users"></i>
+                  </div>
+                  <div class="text">
+                    <h4>مجتمع نشط</h4>
+                    <p>260+ عضو في الديسكورد</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats">
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-number">260+</div>
+                <div class="stat-label">أعضاء الديسكورد</div>
+                <div class="stat-icon">
+                  <i class="fab fa-discord"></i>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">40</div>
+                <div class="stat-label">لاعب نشط</div>
+                <div class="stat-icon">
+                  <i class="fas fa-user"></i>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">متاح دائماً</div>
+                <div class="stat-icon">
+                  <i class="fas fa-server"></i>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">2025</div>
+                <div class="stat-label">سنة التأسيس</div>
+                <div class="stat-icon">
+                  <i class="fas fa-calendar"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم المميزات -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">مميزات <span>استثنائية</span></h2>
+          <p class="section-subtitle">اكتشف ما يجعل 7ofra مختلفاً</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-city"></i>
+            </div>
+            <h3>مدينة حية</h3>
+            <p>عالم مفتوح مليء بالتفاصيل الدقيقة والنشاطات المتنوعة</p>
+            <div class="feature-badge">جديد</div>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3>وظائف متنوعة</h3>
+            <p>اختر من بين عشرات الوظائف المثيرة والمربحة</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-car"></i>
+            </div>
+            <h3>مركبات فاخرة</h3>
+            <p>مجموعة حصرية من المركبات القابلة للتعديل</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <h3>عقارات متطورة</h3>
+            <p>امتلك منزلاً يحلم به الجميع في أفضل الأحياء</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>نظام أمني</h3>
+            <p>انضم إلى قوات الشرطة أو كن مجرماً خطيراً</p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h3>إنجازات</h3>
+            <p>اكسب الجوائز وأثبت مهاراتك في التحديات</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الديسكورد -->
+    <section id="discord" class="discord">
+      <div class="container">
+        <div class="discord-container">
+          <div class="discord-content">
+            <div class="discord-header">
+              <i class="fab fa-discord"></i>
+              <h2>انضم إلى <span>مجتمعنا</span></h2>
+            </div>
+            <p class="discord-desc">
+              انضم إلى <strong>260+ عضو</strong> في مجتمعنا النشط على الديسكورد.
+              تواصل مع اللاعبين، احصل على المساعدة، وكن جزءاً من عائلة 7ofra.
+            </p>
+
+            <div class="discord-stats">
+              <div class="discord-stat">
+                <div class="number">260+</div>
+                <div class="label">أعضاء نشطين</div>
+              </div>
+              <div class="discord-stat">
+                <div class="number">24/7</div>
+                <div class="label">دعم فني</div>
+              </div>
+              <div class="discord-stat">
+                <div class="number">15+</div>
+                <div class="label">قنوات نشطة</div>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-discord">
+              <i class="fab fa-discord"></i>
+              انضم إلى السرفر
+            </a>
+          </div>
+
+          <div class="discord-widget">
+            <div class="widget">
+              <div class="widget-header">
+                <div class="server-icon">
+                  <div class="icon-7">7</div>
+                </div>
+                <div class="server-info">
+                  <h4>7ofra RP</h4>
+                  <span>260 عضو</span>
+                </div>
+              </div>
+
+              <div class="widget-content">
+                <div class="online-members">
+                  <span>الأعضاء المتصلين - 45</span>
+                </div>
+
+                <div class="members-list">
+                  <div class="member online">
+                    <div class="avatar"></div>
+                    <span class="name">Player_01</span>
+                  </div>
+                  <div class="member online">
+                    <div class="avatar"></div>
+                    <span class="name">Admin_7ofra</span>
+                  </div>
+                  <div class="member idle">
+                    <div class="avatar"></div>
+                    <span class="name">Moderator</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الانضمام -->
+    <section id="join" class="join">
+      <div class="container">
+        <div class="join-container">
+          <div class="join-content">
+            <h2>جاهز <span>للمغامرة</span>؟</h2>
+            <p class="join-desc">
+              انضم إلى <strong>40 لاعب</strong> في السرفر وابدأ رحلتك في عالم
+              7ofra الآن!
+            </p>
+
+            <div class="join-steps">
+              <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h4>نزّل SAMP</h4>
+                  <p>قم بتنزيل San Andreas Multiplayer</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h4>أضف السرفر</h4>
+                  <p>أضف IP السرفر إلى المفضلة</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h4>ابدأ اللعب</h4>
+                  <p>اتصل وابدأ مغامرتك</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="server-connect">
+              <h4>اتصل بالسرفر:</h4>
+              <div class="connect-box">
+                <div class="ip-display">
+                  <code>51.75.79.54:7005</code>
+                  <button class="copy-ip" data-ip="51.75.79.54:7005">
+                    <i class="fas fa-copy"></i>
+                  </button>
+                </div>
+                <a href="samp://51.75.79.54:7005" class="btn btn-connect">
+                  <i class="fas fa-plug"></i>
+                  اتصل مباشرة
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="join-visual">
+            <div class="countdown">
+              <h4>انضم الآن!</h4>
+              <div class="countdown-timer">
+                <div class="time-section">
+                  <div class="time-number">40</div>
+                  <div class="time-label">لاعب متصل</div>
+                </div>
+                <div class="separator">/</div>
+                <div class="time-section">
+                  <div class="time-number">60</div>
+                  <div class="time-label">مكان متبقي</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-main">
+            <div class="footer-brand">
+              <div class="brand">
+                <div class="logo-7"></div>
+                <div class="brand-text">
+                  <h3>7ofra</h3>
+                  <span>Role Play</span>
+                </div>
+              </div>
+              <p>أفضل سرفر لعب أدوار عربي مع مجتمع نشط ودعم فني مستمر</p>
+              <div class="social-links">
+                <a href="https://discord.gg/uJBpQEwPZ" class="social"
+                  ><i class="fab fa-discord"></i
+                ></a>
+                <a href="#" class="social"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+
+            <div class="footer-links">
+              <div class="link-group">
+                <h4>السرفر</h4>
+                <a href="#about">عن السرفر</a>
+                <a href="#features">المميزات</a>
+                <a href="#join">كيفية اللعب</a>
+              </div>
+              <div class="link-group">
+                <h4>المجتمع</h4>
+                <a href="#discord">الديسكورد</a>
+                <a href="#">الفريق</a>
+                <a href="#">الأخبار</a>
+              </div>
+              <div class="link-group">
+                <h4>الدعم</h4>
+                <a href="#">المساعدة</a>
+                <a href="#">الإبلاغ عن مشكلة</a>
+                <a href="#">اتصل بنا</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <div class="server-info">
+              <div class="info-item">
+                <i class="fas fa-server"></i>
+                <span>51.75.79.54:7005</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-users"></i>
+                <span>40/100 لاعب</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-signal"></i>
+                <span>80ms بينج</span>
+              </div>
+            </div>
+            <div class="copyright">
+              <p>&copy; 2025 7ofra Role Play. جميع الحقوق محفوظة.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="test.js"></script>
+  </body>
+</html>
